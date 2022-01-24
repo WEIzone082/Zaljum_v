@@ -1,0 +1,57 @@
+nav {
+  width: 100vw;
+  height: 75px;
+  display: flex;
+  position: sticky;
+  top: 0;
+  justify-content: space-between;
+  z-index: 10;
+}
+
+.logo {
+  padding-left: 150px;
+  img {
+    transform: scale(0.7);
+  }
+}
+
+.links {
+  display: flex;
+  width: 480px;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 60px;
+
+  a {
+    font-family: "Noto Serif TC", serif;
+    font-weight: 600;
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    transition: 0.25s;
+  }
+
+  a:hover {
+    text-shadow: 1.5px 1.5px 1.5px rgba(150, 150, 150, 0.8);
+    transform: translateY(-1px);
+  }
+}
+
+.actions {
+  padding-right: 200px;
+  display: flex;
+  align-items: center;
+  width: 90px;
+  justify-content: space-between;
+
+  a {
+    i {
+      font-size: 34px;
+      color: black;
+    }
+  }
+
+  i {
+    font-size: 28px;
+  }
+}
