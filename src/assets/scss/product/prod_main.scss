@@ -1,0 +1,77 @@
+.prod_main {
+  padding-left: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.info {
+  font-family: "Noto Serif TC", serif;
+  font-weight: 400;
+  .brand {
+    font-size: 22px;
+    margin-top: 20px;
+  }
+  .name {
+    font-size: 28px;
+    font-weight: 700;
+    margin: 10px 0 30px 0;
+  }
+
+  .price {
+    font-size: 24px;
+    margin: 10px 0 30px 0;
+  }
+}
+
+.specs {
+  font-family: "Noto Sans TC", sans-serif;
+
+  p {
+    margin: 18px 0;
+  }
+  input[type="radio"] {
+    display: none;
+  }
+
+  span {
+    color: rgba($color: #000000, $alpha: 0.55);
+    border: 1px solid rgba($color: #000000, $alpha: 0.4);
+    border-radius: 5px;
+    padding: 5px;
+    transition: 0.25s;
+    margin: 0 6px;
+  }
+
+  :checked + span {
+    color: #012140;
+    border: 1px solid #012140;
+  }
+
+  p:nth-child(2) {
+    margin-bottom: 5px;
+  }
+
+  input[type="number"] {
+    width: 240px;
+    margin-left: 12px;
+    background-color: rgb(252, 251, 242);
+    border: none;
+    font-size: 16px;
+  }
+}
+
+.add {
+  margin-top: 40px;
+  padding-left: 30px;
+  .atc {
+    background-color: rgb(139, 69, 19);
+    width: 170px;
+    height: 45px;
+    color: white;
+    font-family: "Noto Sans TC", sans-serif;
+    font-size: 18px;
+    border: none;
+    border-radius: 3%;
+  }
+}

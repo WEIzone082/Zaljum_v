@@ -33,48 +33,48 @@ export default {
     },
   },
 
-  mounted() {
-    setTimeout(() => {
-      window.setInterval(() => {
-        this.slides = Object.keys(this.$refs).reverse();
-        if (this.dir) {
-          this.$refs[this.slides[this.page]].classList.toggle(
-            "drift_" + String(this.drift)
-          );
-          this.$refs[this.slides[this.page]].firstChild.classList.toggle(
-            "hidden_" + String(this.hidden)
-          );
-          this.page--;
-          if (this.drift != 3) {
-            this.drift++;
-            this.hidden--;
-          }
-          this.$refs[this.slides[this.page]].firstChild.className = "overlay";
-          if (this.page == 0) {
-            this.dir = !this.dir;
-          }
-        } else {
-          this.$refs[this.slides[this.page]].firstChild.classList.toggle(
-            "hidden_" + String(this.hidden)
-          );
-          this.page++;
-          if (this.page != 0) {
-            this.$refs[this.slides[this.page]].classList.toggle(
-              "drift_" + String(this.drift)
-            );
-          }
-          if (this.drift != 1) {
-            this.drift--;
-            this.hidden++;
-          }
-          this.$refs[this.slides[this.page]].firstChild.className = "overlay";
-          if (this.page == 3) {
-            this.dir = !this.dir;
-          }
-        }
-      }, 4000);
-    }, 4000);
-  },
+  // mounted() {
+  //   setTimeout(() => {
+  //     window.setInterval(() => {
+  //       this.slides = Object.keys(this.$refs).reverse();
+  //       if (this.dir) {
+  //         this.$refs[this.slides[this.page]].classList.toggle(
+  //           "drift_" + String(this.drift)
+  //         );
+  //         this.$refs[this.slides[this.page]].firstChild.classList.toggle(
+  //           "hidden_" + String(this.hidden)
+  //         );
+  //         this.page--;
+  //         if (this.drift != 3) {
+  //           this.drift++;
+  //           this.hidden--;
+  //         }
+  //         this.$refs[this.slides[this.page]].firstChild.className = "overlay";
+  //         if (this.page == 0) {
+  //           this.dir = !this.dir;
+  //         }
+  //       } else {
+  //         this.$refs[this.slides[this.page]].firstChild.classList.toggle(
+  //           "hidden_" + String(this.hidden)
+  //         );
+  //         this.page++;
+  //         if (this.page != 0) {
+  //           this.$refs[this.slides[this.page]].classList.toggle(
+  //             "drift_" + String(this.drift)
+  //           );
+  //         }
+  //         if (this.drift != 1) {
+  //           this.drift--;
+  //           this.hidden++;
+  //         }
+  //         this.$refs[this.slides[this.page]].firstChild.className = "overlay";
+  //         if (this.page == 3) {
+  //           this.dir = !this.dir;
+  //         }
+  //       }
+  //     }, 4000);
+  //   }, 4000);
+  // },
 };
 </script>
 

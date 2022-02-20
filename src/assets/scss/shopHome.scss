@@ -1,0 +1,50 @@
+h2 {
+  font-family: "Noto Serif TC", serif;
+  font-weight: 700;
+  font-size: 38px;
+  margin-bottom: 30px;
+}
+
+.cats_block {
+  width: 820px;
+  margin: 100px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cats {
+  display: flex;
+  width: 820px;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+.cat {
+  position: relative;
+  width: 250px;
+  height: 250px;
+  .cat_name {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-family: "Noto Serif TC", serif;
+    font-weight: 700;
+    font-size: 30px;
+  }
+}
+
+.prod_block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.prods {
+  display: flex;
+  width: 1080px;
+  margin-top: 40px;
+  justify-content: space-between;
+}
