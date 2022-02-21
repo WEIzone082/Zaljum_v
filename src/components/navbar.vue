@@ -44,7 +44,6 @@ export default {
   methods: {
     show() {
       this.$refs.cart.classList.toggle("show");
-      console.log(this.$store.state.cart.cartItems);
     },
   },
   watch: {
@@ -67,8 +66,6 @@ export default {
 <style lang="scss" scoped>
 @import "../assets/scss/navbar.scss";
 
-// For some reasons it isn't working when add path in scss file.
-// so I gotta put it here
 nav {
   background-image: url("../assets/images/asdfg.png");
   background-size: cover;

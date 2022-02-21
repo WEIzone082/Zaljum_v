@@ -6,7 +6,9 @@
     </section>
 
     <section class="cart_items">
-      <p v-if="!cart_item">購物車中沒有商品</p>
+      <p class="no_item" v-if="!cart_item || cart_item.length == 0">
+        購物車中沒有商品
+      </p>
       <div
         class="cart_item"
         v-else
