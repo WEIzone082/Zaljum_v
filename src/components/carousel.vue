@@ -1,15 +1,15 @@
 <template>
   <div class="carousel">
-    <div class="slider p3" ref="p3" @click="show(3)">
+    <div class="slider p3" ref="p3">
       <div class="overlay"></div>
     </div>
-    <div class="slider p2" ref="p2" @click="show(2)">
+    <div class="slider p2" ref="p2">
       <div class="overlay hidden_3"></div>
     </div>
-    <div class="slider p1" ref="p1" @click="show(1)">
+    <div class="slider p1" ref="p1">
       <div class="overlay hidden_2"></div>
     </div>
-    <div class="slider p0" ref="p0" @click="show(0)">
+    <div class="slider p0" ref="p0">
       <div class="overlay hidden_1"></div>
     </div>
   </div>
@@ -24,13 +24,7 @@ export default {
       hidden: 3,
       drift: 1,
       slides: null,
-      msg: "hey",
     };
-  },
-  methods: {
-    show: function (num) {
-      console.log(this.$refs);
-    },
   },
 
   mounted() {

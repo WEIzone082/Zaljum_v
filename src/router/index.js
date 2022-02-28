@@ -3,9 +3,11 @@ import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
 import Story from '../views/Story.vue'
 import bMap from '../views/BrandMap.vue'
-import Shop from '../views/Shop.vue'
+import ShopHome from '../views/ShopHome.vue'
+import product from '../views/product.vue'
 import About from '../views/About.vue'
 import Login from '../views/Login.vue'
+
 
 Vue.use(VueRouter)
 
@@ -31,7 +33,14 @@ const routes = [
   {
     path:'/shop',
     name:'shop',
-    component:Shop
+    component:ShopHome
+  },
+
+  {
+    path:'/shop/product/:productID',
+    name:'product',
+    component:product,
+    props:true
   },
 
   {
